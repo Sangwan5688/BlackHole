@@ -164,7 +164,9 @@ class _PlayScreenState extends State<PlayScreen> {
                           : song['duration'])),
               title: song['title'],
               artist: song["artist"],
-              artUri: Uri.parse(song['image'].replaceAll('50x50','500x500').replaceAll('150x150','500x500')),
+              artUri: Uri.parse(song['image']
+                  .replaceAll('50x50', '500x500')
+                  .replaceAll('150x150', '500x500')),
               genre: song["language"],
               extras: {
                 "url": song["url"],
